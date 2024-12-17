@@ -13,7 +13,6 @@ public class TestDatastructures : AssignmentBase
         Doubles = [],
         Strings2d = [],
         Doubles2d = [],
-
     };
 
 

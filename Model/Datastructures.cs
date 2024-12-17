@@ -8,6 +8,6 @@ public class Datastructures
     public int[][]? Integers2d;
     public double[][]? Doubles2d;
 
-    public List<Object>? StringsList;
+    public List<string>? StringsList;
     public Dictionary<int, string>? KeyValuePairs;
 }

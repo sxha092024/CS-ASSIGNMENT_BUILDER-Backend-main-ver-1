@@ -12,7 +12,8 @@ public class AssignmentList : AssignmentListBase
             typeof(DiceRollerTest),
             typeof(TestAssignment),
             typeof(TestMethods),
-            typeof(TestDatastructures)
+            typeof(TestDatastructures),
+            typeof(TestArrayAndListMethods)
         ];
     }
 }

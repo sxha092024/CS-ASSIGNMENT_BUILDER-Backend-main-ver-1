@@ -16,7 +16,7 @@ public class TestMethods : AssignmentBase
     /// <exception cref="NotImplementedException"></exception>
     public string StringMethod(string str)
     {
-        throw new NotImplementedException("");
+        throw new NotImplementedException();
     }
     /// <summary>
     /// Return a new string array
@@ -169,6 +169,7 @@ public class TestMethods : AssignmentBase
         Assert.Equal(expectedPool[1], StringMethod(expectedPool[1]));
         for (int i = 0; i < expectedPool.Length; i++)
         {
+            Assert.Equal(expectedPool[i], StringMethod(expectedPool[i]));
             Assert.NotNull(StringMethod(expectedPool[i]));
         }
     }

@@ -173,6 +173,7 @@ public class TestMethods : AssignmentBase
             Assert.NotNull(StringMethod(expectedPool[i]));
         }
     }
+
     [Assignment(2)]
     public void TestStringArrayMethod()
     {

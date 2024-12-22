@@ -37,6 +37,13 @@ public class TestArrayAndListMethods : AssignmentBase
     {
         throw new NotImplementedException();
     }
+
+    /*
+    @@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+    Difficult tasks below
+    @@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+    */
+
     /// <summary>
     /// Description of Binary Search algorithm:
     /// Steps:
@@ -55,10 +62,22 @@ public class TestArrayAndListMethods : AssignmentBase
         // Array.Sort(arr);
         if (x == -1 || arr == null)
         {
-            throw new NullException("Array must be sorted before algorithm can be implemented!");
+            throw new Exception();
         }
         throw new NotImplementedException();
     }
+    /// <summary>
+    /// A method that implements the Fibonacci sequence, starting from n = 1
+    /// </summary>
+    /// <param name="n">value o n</param>
+    /// <returns>Method(n - 1) + Method(n - 2)</returns>
+    /// <exception cref="NotImplementedException"></exception>
+    public int Fibonacci(int n)
+    {
+        throw new NotImplementedException();
+    }
+
+
 
     [Assignment(1)]
     public void ShouldReturnStringArray()
@@ -118,6 +137,27 @@ public class TestArrayAndListMethods : AssignmentBase
                 Assert.Equal(expectedXValues[j], BinarySearch(samplePool, expectedXValues[j]));
             }
         }
-
+    }
+    [Assignment(7)]
+    public void TestPrimitiveTypeHandling()
+    {
+        Assert.Throws<OverflowException>(() => IntSum(int.MaxValue, 1));
+        Assert.Throws<OverflowException>(() => IntSum(int.MinValue, -1));
+    }
+    [Assignment(8)]
+    public void TestObjectEquality()
+    {
+        Person person1 = new Person { Name = "John Doe", Age = 30 };
+        Person person2 = new Person { Name = "Jane Doe", Age = 30 };
+        Assert.Equal(person1, person2);
+    }
+    [Assignment(9)]
+    public void TestFibonacci()
+    {
+        Assert.Equal(0, Fibonacci(0));
+        Assert.Equal(1, Fibonacci(1));
+        Assert.Equal(2, Fibonacci(2));
+        Assert.Equal(5, Fibonacci(5));
+        Assert.Equal(55, Fibonacci(10));
     }
 }

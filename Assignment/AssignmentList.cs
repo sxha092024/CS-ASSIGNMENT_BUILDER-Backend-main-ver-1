@@ -1,4 +1,3 @@
-using C_ASSIGNMENT_BUILDER.Assignment;
 using C_ASSIGNMENT_BUILDER.Engine.AssignmentBuilder;
 namespace C_ASSIGNMENT_BUILDER.CurrentAssignment;
 
@@ -19,8 +18,6 @@ public class AssignmentList : AssignmentListBase
     {
         /* Types skal inneholde en Typeof oppgavesettet man vil tracke. - John*/
         Types = [
-            typeof(DiceRollerTest),
-            typeof(TestAssignment),
             typeof(TestMethods),
             typeof(TestDatastructures),
             typeof(TestArrayAndListMethods)

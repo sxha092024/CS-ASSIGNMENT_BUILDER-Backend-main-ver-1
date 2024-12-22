@@ -7,7 +7,6 @@ public class TestMethods : AssignmentBase
     Generics t = new Generics();
     Generics e = new Generics();
 
-
     /// <summary>
     /// Return a string
     /// </summary>
@@ -48,7 +47,7 @@ public class TestMethods : AssignmentBase
     /// <exception cref="NotImplementedException"></exception>
     public double MultiplyDoubleMethod(double a, double b)
     {
-        throw new NotImplementedException("");
+        throw new NotImplementedException();
     }
     /// <summary>
     /// Return a list of doubles
@@ -57,7 +56,7 @@ public class TestMethods : AssignmentBase
     /// <exception cref="NotImplementedException"></exception>
     public List<double> ListDoubleMethod()
     {
-        throw new NotImplementedException("");
+        throw new NotImplementedException();
     }
     /// <summary>
     /// Return a single characther
@@ -67,7 +66,7 @@ public class TestMethods : AssignmentBase
     /// <exception cref="NotImplementedException"></exception>
     public char CharMethod(char c)
     {
-        throw new NotImplementedException("");
+        throw new NotImplementedException();
     }
     /// <summary>
     /// Return a boolean that should be true
@@ -77,7 +76,7 @@ public class TestMethods : AssignmentBase
     /// <exception cref="NotImplementedException"></exception>
     public bool IsNotTrue(bool value)
     {
-        throw new NotImplementedException("");
+        throw new NotImplementedException();
     }
     /// <summary>
     /// Return a boolean that should be false
@@ -87,11 +86,11 @@ public class TestMethods : AssignmentBase
     /// <exception cref="NotImplementedException"></exception>
     public bool IsNotFalse(bool value)
     {
-        throw new NotImplementedException("");
+        throw new NotImplementedException();
     }
     public List<Generics> GenericTypeMethod(Generics e, Generics t)
     {
-        throw new NotImplementedException("");
+        throw new NotImplementedException();
     }
     /// <summary>
     /// Can enter if the age is greater than or equal to 18, 
@@ -120,7 +119,7 @@ public class TestMethods : AssignmentBase
     /// <exception cref="NotImplementedException"></exception>
     public double Square(double a)
     {
-        throw new NotImplementedException("");
+        throw new NotImplementedException();
     }
     /// <summary>
     /// Return the sum of a / b, make sure that a and b cannot be 0
@@ -131,7 +130,7 @@ public class TestMethods : AssignmentBase
     /// <exception cref="NotImplementedException"></exception>
     public double DivideNumbers(double a, double b)
     {
-        throw new NotImplementedException("");
+        throw new NotImplementedException();
     }
 
     /// <summary>
@@ -142,7 +141,7 @@ public class TestMethods : AssignmentBase
     /// <exception cref="NotImplementedException"></exception>
     public string CreateNewFile(string path)
     {
-        throw new NotImplementedException("");
+        throw new NotImplementedException();
     }
     /// <summary>
     /// Append text content to an exisiting file
@@ -153,7 +152,7 @@ public class TestMethods : AssignmentBase
     /// <exception cref="NotImplementedException"></exception>
     public string AppendTextContent(string path, string content)
     {
-        throw new NotImplementedException("");
+        throw new NotImplementedException();
     }
     /*
     @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@

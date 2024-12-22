@@ -5,7 +5,6 @@ For å kjøre programmet,<br>
 ```bash
 cd C#ASSIGNMENT_BUILDER
 
-dotnet add package xunit
 ```
 
 <br>

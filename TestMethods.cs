@@ -268,7 +268,7 @@ public class TestMethods : AssignmentBase
     [Assignment(13)]
     public void TestCreateFile()
     {
-        string filePath = "file.txt";
+        string filePath = "test_file.txt";
         try
         {
             string result = CreateNewFile(filePath);

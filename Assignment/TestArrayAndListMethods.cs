@@ -120,7 +120,6 @@ public class TestArrayAndListMethods : AssignmentBase
         sample.Reverse();
         Assert.Equal(sample, ReverseString(input));
     }
-
     [Assignment(6)]
     public void TestBinarySearchMethod()
     {
@@ -129,13 +128,17 @@ public class TestArrayAndListMethods : AssignmentBase
             1,2,3,4,5,6,7,8,9,10,12,24,32,48,56,64,128,256,512,1024,2048, 1213, 1440, 2414, 93, 01, 23,
         };
 
-        for (int i = 0; i < samplePool.Count(); i++)
+        foreach (var value in expectedXValues)
         {
-            for (int j = 0; j < expectedXValues.Length; j++)
-            {
-                Assert.DoesNotContain(BinarySearch(samplePool, expectedXValues[i]), expectedXValues);
-                Assert.Equal(expectedXValues[j], BinarySearch(samplePool, expectedXValues[j]));
-            }
+            int result = BinarySearch(samplePool, value);
+            Assert.Equal(value, result);
+        }
+
+        int[] nonExistantValues = { -1, 15, 200, 3000 };
+        foreach (var value in nonExistantValues)
+        {
+            int result = BinarySearch(samplePool, value);
+            Assert.Equal(-1, result);
         }
     }
     [Assignment(7)]

@@ -123,19 +123,19 @@ public class TestArrayAndListMethods : AssignmentBase
     [Assignment(6)]
     public void TestBinarySearchMethod()
     {
-        int[] expectedXValues = { 1, 2, 3, 4, 5, 6, 8, 9, 10, 25, 99, 91 };
+        int[] expectedXValues = { 1, 2, 3, 4, 5, 6, 8, 9, 10, 23, 24, 32, 48, 56, 64, 93, 128, 256, 512, 1024, 1213, 1440, 2048, 2414 };
         int[] samplePool = {
-            1,2,3,4,5,6,7,8,9,10,12,24,32,48,56,64,128,256,512,1024,2048, 1213, 1440, 2414, 93, 01, 23,
+            1,2,3,4,5,6,7,8,9,10,12,24,32,48,56,64,128,256,512,1024,2048, 1213, 1440, 2414, 93, 23,
         };
-
+        Array.Sort(samplePool);
         foreach (var value in expectedXValues)
         {
             int result = BinarySearch(samplePool, value);
             Assert.Equal(value, result);
         }
+        int[] nonExistingtValues = { -1, 15, 200, 3000 };
 
-        int[] nonExistantValues = { -1, 15, 200, 3000 };
-        foreach (var value in nonExistantValues)
+        foreach (var value in nonExistingtValues)
         {
             int result = BinarySearch(samplePool, value);
             Assert.Equal(-1, result);

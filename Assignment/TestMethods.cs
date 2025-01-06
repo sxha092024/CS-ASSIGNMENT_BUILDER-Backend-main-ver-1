@@ -247,7 +247,7 @@ public class TestMethods : AssignmentBase
     {
         for (int i = 2; i < 100; i++)
         {
-            Assert.Equal(Double.Pow(i,2), Square(i));
+            Assert.Equal(Double.Pow(i, 2), Square(i));
         }
     }
     [Assignment(12)]
